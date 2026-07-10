@@ -1,0 +1,15 @@
+*{
+
+transition:
+
+background .25s,
+
+color .25s,
+
+border .25s,
+
+transform .25s,
+
+box-shadow .25s;
+
+}

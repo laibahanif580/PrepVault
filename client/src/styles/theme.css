@@ -1,0 +1,76 @@
+:root {
+
+  /* ===========================
+      COLORS
+  ============================ */
+
+  --background: #0b0b0c;
+
+  --surface: rgba(20,20,22,.75);
+
+  --surface-light: rgba(34,34,38,.65);
+
+  --surface-hover: rgba(42,42,46,.78);
+
+  --primary: #C8A96A;
+
+  --primary-hover: #D8B97E;
+
+  --white: #F7F7F5;
+
+  --text-primary: #F7F7F5;
+
+  --text-secondary: #B7B7BC;
+
+  --text-muted: #7B7B83;
+
+  --border: rgba(255,255,255,.08);
+
+  --success: #33C36B;
+
+  --danger: #E45D69;
+
+
+
+  /* ===========================
+      BORDER RADIUS
+  ============================ */
+
+  --radius-sm: 10px;
+
+  --radius-md: 14px;
+
+  --radius-lg: 18px;
+
+  --radius-xl: 24px;
+
+
+
+  /* ===========================
+      SHADOWS
+  ============================ */
+
+  --shadow-card:
+      0 20px 60px rgba(0,0,0,.45);
+
+  --shadow-button:
+      0 10px 30px rgba(200,169,106,.22);
+
+  --shadow-hover:
+      0 24px 70px rgba(0,0,0,.55);
+
+
+
+  /* ===========================
+      GLASS
+  ============================ */
+
+  --glass:
+
+      rgba(20,20,22,.72);
+
+  --glass-border:
+
+      rgba(255,255,255,.08);
+
+}
