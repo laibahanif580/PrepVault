@@ -39,7 +39,7 @@ const features = [
   },
   {
     title: "Mock Interview",
-    subtitle: "Calendar & Planner",
+    subtitle: "Test yourself with mock interviews",
     badge: "Plan",
     image: plannerImg,
   },
