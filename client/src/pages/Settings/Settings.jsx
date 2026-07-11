@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   User,
@@ -20,6 +21,7 @@ import {
 } from "lucide-react";
 
 function Settings() {
+  const navigate = useNavigate();
   const [isEditing, setIsEditing] = useState(false);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
@@ -80,13 +82,24 @@ function Settings() {
     });
   };
 
+  // ✅ Logout - Redirect to Login
   const handleLogout = () => {
-    alert("Logged out successfully!");
+    // Clear auth data from localStorage
+    localStorage.removeItem("auth");
+    localStorage.removeItem("token");
+    
+    // Redirect to login page
+    navigate("/login");
     setShowLogoutConfirm(false);
   };
 
+  // ✅ Delete Account - Redirect to Landing
   const handleDeleteAccount = () => {
-    alert("Account deleted successfully!");
+    // Clear all user data
+    localStorage.clear();
+    
+    // Redirect to landing page
+    navigate("/");
     setShowDeleteConfirm(false);
   };
 

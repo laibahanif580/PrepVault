@@ -15,18 +15,19 @@ import {
 } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import bg from "../../assets/images/greeting.avif";
-import projectImage from "../../assets/images/coding.jpg";
-
+import projectImage1 from "../../assets/images/coding.jpg";
+import projectImage2 from "../../assets/images/flashcards.jpg";
+import projectImage3 from "../../assets/images/resources.jpg";
 // Mock project data
 const initialProjects = [
   {
     id: 1,
     title: "PrepVault",
     description: "An all-in-one interview preparation platform with AI-powered assistance, note-taking, and revision planning.",
-    image: projectImage,
+    image: projectImage1,
     challenges: "Building a scalable architecture for real-time collaboration and AI integration.",
-    liveDemo: "https://prepvault.dev",
-    github: "https://github.com/yourusername/prepvault",
+    liveDemo: "https://prepvault-flax.vercel.app",
+    github: "https://github.com/laibahanif580/PrepVault",
     linkedin: "https://linkedin.com/in/yourusername",
     technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
     createdAt: "Jan 15, 2025",
@@ -36,7 +37,7 @@ const initialProjects = [
     id: 2,
     title: "Task Manager Pro",
     description: "A full-featured task management application with team collaboration, real-time updates, and analytics dashboard.",
-    image: projectImage,
+    image: projectImage2,
     challenges: "Implementing real-time sync across multiple users and devices.",
     liveDemo: "https://taskmanager.dev",
     github: "https://github.com/yourusername/taskmanager",
@@ -49,7 +50,7 @@ const initialProjects = [
     id: 3,
     title: "Portfolio Website",
     description: "A modern, responsive portfolio website showcasing projects, skills, and experience with smooth animations.",
-    image: projectImage,
+    image: projectImage3,
     challenges: "Creating smooth animations and optimizing performance.",
     liveDemo: "https://portfolio.dev",
     github: "https://github.com/yourusername/portfolio",
@@ -72,7 +73,7 @@ function Projects() {
     github: "",
     linkedin: "",
     technologies: "",
-    image: projectImage,
+    image: projectImage1,
   });
 
   const handleInputChange = (e) => {

@@ -539,12 +539,12 @@ function Resources() {
                   <>
                     {/* Header */}
                     <div className="flex items-start justify-between">
-                      <div className="flex items-center gap-2 sm:gap-3">
+                      <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1">
                         <div className="rounded-xl bg-white/5 p-2 sm:p-2.5 flex-shrink-0">
                           {getPlatformIcon(resource.platform)}
                         </div>
-                        <div className="min-w-0">
-                          <h3 className="text-sm sm:text-base font-semibold text-white group-hover:text-[#C8A96A] transition truncate">
+                        <div className="min-w-0 flex-1">
+                          <h3 className="text-sm sm:text-base font-semibold text-white group-hover:text-[#C8A96A] transition break-words">
                             {resource.title}
                           </h3>
                           <p className="text-[10px] sm:text-xs text-gray-400">{resource.category}</p>
@@ -564,7 +564,7 @@ function Resources() {
 
                     {/* Description */}
                     {resource.description && (
-                      <p className="mt-2 sm:mt-3 text-xs sm:text-sm text-gray-300 line-clamp-2">
+                      <p className="mt-2 sm:mt-3 text-xs sm:text-sm text-gray-300 line-clamp-2 break-words">
                         {resource.description}
                       </p>
                     )}

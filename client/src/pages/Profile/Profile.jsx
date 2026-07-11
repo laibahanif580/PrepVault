@@ -20,13 +20,13 @@ function Profile() {
   const [isEditing, setIsEditing] = useState(false);
   const [profile, setProfile] = useState({
     name: "Laiba",
-    email: "laiba@prepvault.com",
+    email: "laiba@example.com",
     phone: "+92 300 1234567",
-    location: "Karachi, Pakistan",
+    location: "Lahore,Pakistan",
     title: "Software Engineer",
     department: "Computer Science",
-    university: "NED University",
-    graduationYear: "2025",
+    university: "Fast university",
+    graduationYear: "2026",
     bio: "Passionate software engineer with a strong interest in full-stack development, AI, and interview preparation. Always eager to learn new technologies and share knowledge with others.",
     github: "https://github.com/laiba",
     linkedin: "https://linkedin.com/in/laiba",
