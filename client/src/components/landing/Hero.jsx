@@ -1,8 +1,17 @@
 import { motion } from "framer-motion";
 import heroImage from "../../assets/images/resources.jpg";
 import { ArrowRight, CreditCard, Infinity, BookOpen } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Hero() {
+  // Function to scroll to features section
+  const scrollToFeatures = () => {
+    const featuresSection = document.getElementById("features");
+    if (featuresSection) {
+      featuresSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative overflow-hidden bg-[#0B0B0C] pt-24 sm:pt-28 md:pt-32">
       {/* Background Glows */}
@@ -38,10 +47,17 @@ function Hero() {
 
           {/* Buttons */}
           <div className="mt-8 sm:mt-10 md:mt-12 flex flex-wrap justify-center xl:justify-start gap-4 sm:gap-5">
-            <button className="rounded-xl bg-[#C8A96A] px-6 sm:px-8 md:px-9 py-3 sm:py-4 font-semibold text-black shadow-[0_15px_40px_rgba(200,169,106,0.35)] transition-all duration-300 hover:scale-105 text-sm sm:text-base">
-              Get Started
-            </button>
-            <button className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-6 sm:px-8 md:px-9 py-3 sm:py-4 text-white backdrop-blur-xl transition-all duration-300 hover:border-[#C8A96A]/30 hover:bg-white/10 text-sm sm:text-base">
+            <Link to="/register">
+              <button className="rounded-xl bg-[#C8A96A] px-6 sm:px-8 md:px-9 py-3 sm:py-4 font-semibold text-black shadow-[0_15px_40px_rgba(200,169,106,0.35)] transition-all duration-300 hover:scale-105 text-sm sm:text-base">
+                Get Started
+              </button>
+            </Link>
+
+            {/* ✅ Explore Button - Scrolls to Features */}
+            <button
+              onClick={scrollToFeatures}
+              className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-6 sm:px-8 md:px-9 py-3 sm:py-4 text-white backdrop-blur-xl transition-all duration-300 hover:border-[#C8A96A]/30 hover:bg-white/10 text-sm sm:text-base"
+            >
               Explore
               <ArrowRight size={18} />
             </button>

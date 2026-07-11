@@ -76,9 +76,9 @@ function Subjects() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.08 }}
                 whileHover={{ y: -6 }}
-                className="group relative overflow-hidden rounded-xl sm:rounded-2xl border border-white/10 hover:border-[#C8A96A]/40 transition-all duration-300 h-40 sm:h-44 md:h-48 cursor-pointer bg-white/5 backdrop-blur-sm"
+                className="group relative overflow-hidden rounded-xl sm:rounded-2xl border border-white/10 hover:border-[#C8A96A]/40 transition-all duration-300 h-40 sm:h-44 md:h-48 cursor-pointer bg-white/5"
               >
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-[#C8A96A]/5 via-transparent to-transparent" />
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500  from-[#C8A96A]/5 via-transparent to-transparent" />
 
                 <div className="flex h-full flex-col justify-between p-4 sm:p-5 md:p-6 relative z-10">
                   <div className="flex items-start justify-between">
