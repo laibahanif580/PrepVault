@@ -20,9 +20,9 @@ const features = [
     image: notesImg,
   },
   {
-    title: "Flashcards",
-    subtitle: "Test Yourself Instantly",
-    badge: "Flip",
+    title: "Code",
+    subtitle: "Important Snippets",
+    badge: "Write & Save",
     image: flashcardsImg,
   },
   {
@@ -38,7 +38,7 @@ const features = [
     image: resourcesImg,
   },
   {
-    title: "Revision",
+    title: "Mock Interview",
     subtitle: "Calendar & Planner",
     badge: "Plan",
     image: plannerImg,
@@ -111,7 +111,7 @@ function Features() {
           {/* Features */}
           <div className="text-center">
             <h2 className="hero-font text-4xl sm:text-5xl md:text-6xl lg:text-7xl italic text-[#C8A96A]">
-              6+
+              Multiple
             </h2>
             <p className="mt-2 sm:mt-3 text-base sm:text-lg font-medium tracking-wide text-gray-300">
               Features
